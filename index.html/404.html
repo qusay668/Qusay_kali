@@ -4,13 +4,8 @@
   <meta charset="utf-8">
   <title>Redirecting...</title>
   <script>
-    // قراءة المسار الذي حاول المستخدم الوصول إليه
-    var path = window.location.pathname;
-    
-    // إنشاء المسار الجديد: /Qusay_kali/index.html + المسار الأصلي في شريط البحث
+    // هذه الدالة تعيد توجيه أي رابط خاطئ إلى index.html مع الاحتفاظ بالمسار الفرعي
     var newPath = "/Qusay_kali/" + "index.html" + location.search + location.hash;
-    
-    // يتم التوجيه إلى المسار الجديد
     window.location.replace(newPath);
   </script>
 </head>
